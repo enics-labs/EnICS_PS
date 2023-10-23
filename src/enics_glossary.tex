@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% units
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Volts
+\newcommand{\V}{\,\si{\volt}\xspace}
+\newcommand{\mv}{\,\si{\milli\volt}\xspace}
+% Meters
+\newcommand{\nm}{\,\si{\nano\meter}\xspace}
+\newcommand{\um}{\,\si{\micro\meter}\xspace}
+\newcommand{\umsquared}{\,\si{\micro\meter\squared}\xspace}
+\newcommand{\umtimes}{\,\si{\micro\meter}$\times$}
+% Seconds
+\newcommand{\ps}{\,\si{\pico\second}\xspace}
+\newcommand{\ns}{\,\si{\nano\second}\xspace}
+\newcommand{\us}{\,\si{\micro\second}\xspace}
+\newcommand{\ms}{\,\si{\milli\second}\xspace}
+% Byte
+\newcommand{\bit}{\si{\bit}\xspace}
+\newcommand{\byte}{\si{\byte}\xspace}
+\newcommand{\kbyte}{\,\si{\kilo\byte}\xspace}
+\newcommand{\kbit}{\,\si{\kilo\bit}\xspace}
+% Hertz
+\newcommand{\mhz}{\,\si{\mega\hertz}\xspace}
+\newcommand{\ghz}{\,\si{\giga\hertz}\xspace}
+% Watts
+\newcommand{\pw}{\,\si{\pico\watt}\xspace}
+\newcommand{\nw}{\,\si{\nano\watt}\xspace}
+\newcommand{\mw}{\,\si{\milli\watt}\xspace}
+\newcommand{\uw}{\,\si{\micro\watt}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Special Symbols
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't remove the \xspace from the \X definition. It is needed almost everywhere...
+\newcommand{\X}{$\times$\xspace}
+\newcommand{\Xnospace}{$\times$}
+\newcommand{\cel}{$^\circ$C\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% newcommand
+%\newcommand{\}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sixt}{\gls{6T} \gls{sram}\xspace}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Glossary
+%   \newacronym{}{}{}
+%   \newcommand{\}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Other 
+\newcommand{\EPFL}{\'Ecole Polytechnique F\'ed\'erale de Lausanne}
+
+\newacronym{snr}{SNR}{signal-to-noise ratio}
+\newacronym{mep}{MEP}{minimum energy point}
+\newacronym{ppa}{PPA}{performance, power, and area}
+\newacronym{mc}{MC}{Monte Carlo}
+\newacronym{mu}{$\mu$}{mean}
+\newacronym{sigma}{$\sigma$}{standard deviation}
+\newacronym{ser}{SER}{soft errors}
+\newacronym{seu}{SEU}{single-event upset}
+\newacronym{cdf}{CDF}{cumulative distribution function}
+\newacronym{pdf}{PDF}{probabililty distribution function}
+\newcommand{\oom}{order-of-magnitude\xspace}
+\newcommand{\ooms}{orders-of-magnitude\xspace}
+
+%% General VLSI
+\newacronym{itrs}{ITRS}{International Technology Roadmap for Semiconductors}
+\newacronym{ic}{IC}{integrated circuit}
+\newacronym{ip}{IP}{intellectual property}
+\newacronym{soi}{SOI}{silicon-on-insulator}
+\newacronym{fdsoi}{FD-SOI}{fully-depleted silicon-on-insulator}
+\newcommand{\fdsoi}{\gls{fdsoi}\xspace}
+\newacronym{sc}{SC}{standard cell}
+\newacronym{soc}{SoC}{system-on-chip}
+\newacronym{vdd}{$V_{\text{DD}}$}{supply voltage}
+\newacronym{vboost}{$V_{\text{BOOST}}$}{boosted voltage}
+\newcommand{\vdd}{$V_{\text{DD}}$\xspace}
+\newcommand{\vddmin}{$V_{\text{DDmin}}$}
+\newacronym{gnd}{$GND$}{ground}
+\newacronym{vtc}{VTC}{voltage transfer characteristic}
+\newacronym{rdf}{RDF}{random dopant fluctuations}
+\newacronym{ulp}{ULP}{ultra-low power}
+\newacronym{pvt}{PVT}{Process-Voltage-Temperature}
+\newacronym{vlsi}{VLSI}{very large scale integration}
+\newacronym{asic}{ASIC}{application specific integrated circuit}
+\newacronym{pcb}{PCB}{printed circuit board}
+\newacronym{fir}{FIR}{finite impulse response}
+\newacronym{dsp}{DSP}{digital signal processing}
+\newacronym{lut}{LUT}{look-up table}
+\newacronym{mac}{MAC}{multiply-and-accumulate}
+\newacronym{cmos}{CMOS}{complementary-metal-oxide-semiconductor}
+\newacronym{dff}{DFF}{Data Flip-Flop}
+
+%%% Transistors
+\newacronym{subvt}{sub-$V_{\text{T}}$}{sub-threshold}
+\newcommand{\subvt}{\gls{subvt}\xspace}
+\newacronym{nearvt}{near-$V_{\text{T}}$}{near threshold}
+\newacronym{vt}{$V_{\text{T}}$}{threshold voltage}
+\newcommand{\vt}{\gls{vt}\xspace}
+\newcommand{\ionioff}{$I_{\text{on}}/I_{\text{off}}$}
+\newacronym{vgs}{$V_{\text{GS}}$}{gate-to-source voltage} 
+\newacronym{vds}{$V_{\text{DS}}$}{drain-to-source voltage} 
+\newacronym{vbs}{$V_{\text{BS}}$}{body-to-source voltage} 
+\newacronym{vgb}{$V_{\text{GB}}$}{gate-to-body voltage} 
+\newacronym{dibl}{DIBL}{drain induced barrier lowering}
+\newacronym{gidl}{GIDL}{gate induced drain leakage} 
+\newacronym{ids}{$I_{\text{DS}}$}{drain-to-source current}
+\newacronym{sce}{SCE}{short channel effect}
+\newacronym{rsce}{RSCE}{reverse short channel effect}
+\newacronym{tox}{$t_{\text{ox}}$}{gate oxide thickness}
+\newacronym{L}{$L$}{channel length}
+\newacronym{W}{$W$}{channel width}
+\newacronym{rbb}{RBB}{reverse body biasing}
+\newacronym{fbb}{FBB}{forward body biasing}
+\newacronym{btbt}{BTBT}{band-to-band tunneling}
+\newacronym{bjt}{BJT}{bipolar junction transistor}
+\newacronym{hvt}{HVT}{high threshold voltage}
+\newacronym{lvt}{LVT}{low threshold voltage}
+\newacronym{nvt}{NVT}{nominal threshold voltage}
+\newacronym{pmos}{PMOS}{p-type MOSFET}
+\newacronym{nmos}{NMOS}{n-type MOSFET}
+\newacronym{isub}{$I_\text{sub}$}{sub-threshold leakage}
+\newacronym{igate}{$I_\text{gate}$}{gate leakage}
+\newacronym{ibulk}{$I_\text{bulk}$}{bulk leakage}
+\newacronym{vbb}{$V_{\text{BB}}$}{body voltage} 
+\newcommand{\vbb}{\gls{vbb}\xspace}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+
+%% Memory
+\newacronym{2T}{2T}{two-transistor}
+\newacronym{3T}{3T}{three-transistor}
+\newacronym{4T}{4T}{four-transistor}
+\newacronym{6T}{6T}{six-transistor}
+\newacronym[longplural={static random access memories}]{sram}{SRAM}{static random access memory}
+%\newcommand{\sram}{\gls{sram}\xspace}
+\newacronym{1T1C}{1T-1C}{1-transistor 1-capacitor}
+\newacronym[longplural={dynmaic random access memories}]{dram}{DRAM}{dynamic random access memory}
+\newcommand{\dram}{\gls{dram}\xspace}
+\newacronym{ssd}{SSD}{solid-state hard drive}
+\newacronym{L1}{L1}{level-1}
+\newacronym{L2}{L2}{level-2}
+\newacronym{L3}{L3}{level-3}
+\newacronym{L4}{L4}{level-4}
+\newacronym{nvm}{NVM}{non-volatile memory}
+\newacronym{rom}{ROM}{read-only memory}
+\newacronym{fifo}{FIFO}{first-in first-out}
+\newacronym{lifo}{LIFO}{last-in first-out}
+\newacronym[longplural={content addressable memories}]{cam}{CAM}{content addressable memory}
+\newcommand{\cam}{\gls{cam}\xspace}
+
+\newcommand{\one}{`1'\xspace}
+\newcommand{\zero}{`0'\xspace}
+\newacronym{wl}{WL}{word line}
+\newcommand{\wl}{\gls{wl}\xspace}
+\newacronym{bl}{BL}{bit line}
+\newcommand{\bl}{\gls{bl}\xspace}
+\newacronym{wbl}{WBL}{write bit line}
+\newcommand{\wbl}{\gls{wbl}\xspace}
+\newacronym{rbl}{RBL}{read bit line}
+\newcommand{\rbl}{\gls{rbl}\xspace}
+\newacronym{mw}{MW}{write transistor}
+\newacronym{mr}{MR}{read transistor}
+\newacronym{sn}{SN}{storage node}
+\newcommand{\sn}{\gls{sn}\xspace}
+\newacronym{wwl}{WWL}{write word line}
+\newcommand{\wwl}{\gls{wwl}\xspace}
+\newacronym{rwl}{RWL}{read word line}
+\newcommand{\rwl}{\gls{rwl}\xspace}
+\newacronym{mux}{mux}{multiplexer}
+\newacronym{sa}{SA}{sense amplifier}
+\newacronym{mlc}{MLC}{multi-level cell}
+\newacronym{drv}{DRV}{data retention voltage}
+\newacronym{nwl}{NWL}{negative word line}
+\newacronym{bist}{BIST}{built-in self-test}
+\newacronym{bisr}{BISR}{built-in self-repair}
+\newacronym{reram}{Re-RAM}{resistive RAM}
+\newacronym{stt}{STT-MRAM}{spin-transfer torque magnetic RAM}
+\newacronym{ecc}{ECC}{error correction code}
+\newacronym{cdmr}{CDMR}{complementary dual-modular redundancy}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+
+% Noise Margins
+\newacronym{snm}{SNM}{static noise margin}
+\newacronym{rsnm}{RSNM}{read static noise margin}
+\newacronym{wsnm}{WSNM}{write static noise margin}
+\newacronym{dnm}{DNM}{dynamic noise margin}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+
+% RadHard
+\newacronym{qcrit}{$Q_\text{crit}$}{critical charge}
+%\newacronym{seu}{SEU}{single event upset}
+\newacronym{tmr}{TMR}{triple modular redundancy}
+\newacronym{dmr}{DMR}{dual modular redundancy}
+\newacronym{edac}{EDAC}{error detection and correction}
+\newacronym{secded}{SECDED}{single error correction~-- double error detection}
+\newacronym{dected}{DECTED}{double error correction~-- triple error detection}
+
+% Gain Cells
+\newacronym{gc}{GC}{gain cell}
+\newacronym{edram}{eDRAM}{embedded DRAM}
+\newacronym{gcedram}{GC-eDRAM}{gain-cell embedded DRAM}
+%\newcommand{\gcedram}{\gls{gcedram}\xspace}
+\newacronym{drt}{DRT}{data retention time}
+\newcommand{\drt}{\gls{drt}\xspace}
+\newcommand{\csn}{$C_{\text{SN}}$\xspace}
+\newcommand{\vboost}{$V_{\text{BOOST}}$\xspace}
+\newcommand{\vneg}{$V_{\text{NEG}}$\xspace}
+
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+%\newacronym{}{}{}
+
+%% Digital Gates
+\newcommand{\tsu}{$t_{\text{su}}$}
+\newcommand{\tpd}{$t_{\text{pd}}$}
+\newcommand{\tplh}{$t_{\text{pLH}}$}
+\newcommand{\tphl}{$t_{\text{pHL}}$}
+\newcommand{\thold}{$t_{\text{hold}}$}
+\newcommand{\tcq}{$t_{\text{cq}}$}
+\newcommand{\tacc}{$t_{\text{acc}}$}
+\newacronym{dcvsl}{DCVSL}{differential cascade voltage switch logic}
+
+%%% EDA
+\newacronym{dif}{DIF}{digital implementation flow}
+\newacronym{hdl}{HDL}{hardware description language}
+\newacronym{rtl}{RTL}{register transfer level}
+\newacronym{eda}{EDA}{electronic design automation}
+\newacronym{cad}{CAD}{computer-aided design}
+\newacronym{pr}{P\&R}{place and route}
+\newacronym{cts}{CTS}{clock-tree synthesis}
+\newacronym{sta}{STA}{static timing analysis}
+\newacronym{edi}{EDI}{Cadence Encounter Design Implementation}
+\newacronym{s_dc}{DC}{Synopsys Design Compiler}
+\newacronym{sdc}{SDC}{Synopsys Design Constraints}
+\newacronym{vcd}{VCD}{value change dump}
+
+
+\newacronym{scm}{SCM}{standard cell memory}
+
+% Measurement Equipment
+\newacronym{smu}{SMU}{source/measure unit}
+\newacronym{dmm}{DMM}{digital multimeter}
+
+% Power Analysis
+\newacronym{lpa}{LPA}{Leakage Power Analysis}
+\newacronym{dpa}{DPA}{Differential Power Analysis}
+
+% PUF
+\newacronym{puf}{PUF}{Physical Unclonable Function}
+
+% Deep Learning
+
+
+\newacronym{dl}{DL}{deep learning}
+\newcommand{\dl}{\gls{dl}\xspace}
+\newacronym{ml}{ML}{machine learning}
+\newcommand{\ml}{\gls{ml}\xspace}
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newcommand{\ai}{\gls{ai}\xspace}
+\newacronym{cnn}{CNN}{convolutional neural network}
+\newcommand{\cnn}{\gls{cnn}\xspace}
+\newacronym{dnn}{DNN}{deep neural network}
+\newcommand{\dnn}{\gls{dnn}\xspace}
+\newcommand{\dnns}{\glspl{dnn}\xspace}
+\newacronym{cpu}{CPU}{central processing unit}
+\newcommand{\cpu}{\gls{cpu}\xspace}
+\newacronym{gpu}{GPU}{graphics processing unit}
+\newcommand{\gpu}{\gls{gpu}\xspace}
+\newacronym{relu}{ReLu}{rectified linear unit}
+\newcommand{\relu}{\gls{relu}\xspace}
+
+% DNA
+\newacronym{odes}{ODEs}{ordinary differential equations}
+\newacronym{dna}{DNA}{Deoxyribonucleic Acid}

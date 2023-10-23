@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DNA Simulator                			%%
+%% Version 1.0								%%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{fullpage}
+
+
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=1]{helvet}
+\usepackage[helvet]{sfmath}
+\everymath={\sf}
+
+\usepackage{parskip}
+\usepackage[colorinlistoftodos]{todonotes}
+%\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+
+\usepackage{listings}
+
+\input{src/enics_packages.tex}
+\input{src/enics_macros.tex}
+\input{src/enics_glossary.tex}
+
+
+\title{EnICS PS}
+\author{Yoav Weizman, Pratik Prajapati, Roman Golman}
+
+\begin{document}
+\maketitle
+
+\begingroup
+\let\clearpage\relax
+\renewcommand{\contentsname}{Table of Contents}
+\pagestyle{empty}
+\tableofcontents		
+\endgroup	
+\clearpage
+
+%%% ==========================================================================
+\section{Introduction} 
+%%% ==========================================================================
+The EnICS PS board is capable of outputting 8 different voltages. The voltages are coming from LDOs that are controlled either by manual potentiometer or by programmable potentiometer. The potentiometers that control the LDOs are determined by switches (JP2-JP8).
+
+
+%%% ==========================================================================
+\section{Board Docs} 
+%%% ==========================================================================
+The relevant data sheets are located in the docs directory of this project.
+\begin{itemize}
+    \item ENICS-\_PS.pdf: board schematic 
+    \item MCP40D18.pdf: programmable potentiometer spec
+    \item pca9548a.pdf: U1 and U3 muxes spec
+    \item MCP2221A-Data-Sheet-20005565E.pdf: I2C/UART Protocol Converter spec
+\end{itemize}
+
+%%% ==========================================================================
+\section{Software} 
+%%% ==========================================================================
+The software required to communicate with the board is written in Python.
+In order to use you need to install: \href{https://pypi.org/project/PyMCP2221A/}{https://pypi.org/project/PyMCP2221A/}
+
+The software (Python class) for the board is located in code directory of this project.
+
+
+
+
+\end{document}
+
